@@ -1,0 +1,6 @@
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(255) UNIQUE NOT NULL,
+    price REAL NOT NULL,
+    quantity INTEGER NOT NULL
+); 

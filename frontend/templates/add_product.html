@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        form div { margin-bottom: 10px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        input[type="text"], input[type="number"] { width: 300px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
-        button { padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        .back-link { display: block; margin-top: 20px; text-decoration: none; color: #007bff; }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="container">
     <h1>Add New Product</h1>
     <form action="/add" method="post">
         <div>
@@ -33,5 +25,6 @@
         <button type="submit">Add Product</button>
     </form>
     <a href="/" class="back-link">Back to Products</a>
+    </div>
 </body>
 </html> 
